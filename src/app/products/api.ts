@@ -1,5 +1,7 @@
+import {PrismaClient} from "@prisma/client"
+
+const db = new PrismaClient()
+
 export async function getProducts() {
-  return fetch('https://api.github.com/users/namevug').then(res => 
-    res.json()
-  )
+  return await db.product.findMany()
 }

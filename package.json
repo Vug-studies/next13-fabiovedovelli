@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:seed": "prisma db seed",
+    "db:push": "prisma db push"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.mjs"
   },
   "dependencies": {
     "@prisma/client": "4.14.0",
@@ -24,6 +29,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "prisma": "4.14.0"
+    "@faker-js/faker": "^8.0.2",
+    "prisma": "4.14.0",
+    "ts-node": "^10.9.1"
   }
 }
