@@ -7,10 +7,17 @@ export default async function Home() {
 
       <hr className="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" /> 
       <span className="absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900" />
-      
-      <Link href='/products'>
-        <p>Página de produtos</p>
+      <div className="flex gap-5">
+      <Link href='/'>
+        <p>Home</p>
       </Link>
+      <Link href='/products'>
+        <p>Produtos</p>
+      </Link>
+      <Link href='/comments'>
+        <p>Comentário</p>
+      </Link>
+      </div>
     </main>
   )
 }
