@@ -19,3 +19,8 @@ model Product {
   imageAlt String
   price    Int
 }
+
+model Comments {
+  id      Int    @id @default(autoincrement())
+  comment String
+}
